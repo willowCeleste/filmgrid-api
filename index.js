@@ -103,6 +103,6 @@ app.post('/image', async (req, res) => {
     
 });
 
-const server = app.listen(port, () => {
+const server = app.listen(process.env.port || port, () => {
     console.log("server is listening!");
 });
