@@ -109,5 +109,5 @@ app.post('/image', async (req, res) => {
 });
 
 const server = app.listen(process.env.PORT || port, () => {
-    console.log("server is listening!");
+    console.log(`server is listening on port ${process.env.PORT || port}!`);
 });
